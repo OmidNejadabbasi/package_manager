@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/app_list_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="6dp"
+    android:padding="5dp"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="3dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/app_icon_imageview"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            tools:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/app_name_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@+id/app_icon_imageview"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:textColor="@color/colorAppNameText"
+            android:textSize="17sp"
+            tools:text="App Name " />
+
+        <TextView
+            android:id="@+id/package_name_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/app_name_textView"
+            android:layout_alignStart="@+id/app_name_textView"
+            android:layout_below="@+id/app_name_textView"
+            android:textSize="12sp"
+            android:textStyle="italic"
+            tools:text="Package TextView" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/app_name_textView"
+            android:layout_below="@+id/app_icon_imageview">
+
+            <ImageButton
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_margin="2dp"
+                android:background="#0000"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_icons8_trash_can" />
+
+            <ImageButton
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_margin="2dp"
+                android:background="#0000"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_apk" />
+
+            <ImageButton
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_margin="2dp"
+                android:background="#0000"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_share" />
+        </LinearLayout>
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
